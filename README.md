@@ -2,17 +2,17 @@
 
 Scrape (most of) the beers from BeerAdvocate. Includes the following data:
 
-    * style
-    * style_id
-    * name
-    * beer_id
-    * brewery
-    * brewery_id
-    * abv
-    * rAvg
-    * pDev
-    * num_reviews
-    * timestamp
+* style
+* style_id
+* name
+* beer_id
+* brewery
+* brewery_id
+* abv
+* rAvg
+* pDev
+* num_reviews
+* timestamp
 
 # Scraping Beers
 
