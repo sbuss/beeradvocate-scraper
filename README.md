@@ -20,6 +20,9 @@ Scrape (most of) the beers from BeerAdvocate. Includes the following data:
 scrapy crawl beeradvocate_brewery -o beers.json
 ```
 
+Note that this crawl will take about an hour, assuming several threads are
+being used.
+
 # Spiders
 
 This includes two spiders:
