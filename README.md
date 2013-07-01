@@ -32,9 +32,9 @@ This includes two spiders:
 
 ## BeerAdvocateBrewerySpider
 
-This spider crawls the list of breweries by country and indexes all of their
-beers. This is a much more complete list that the beers found by crawling the
-beers-by-style list.
+This spider crawls the list of [breweries by country](http://beeradvocate.com/beerfly/directory)
+and indexes all of their beers. This is a much more complete list that the
+beers found by crawling the beers-by-style list.
 
 ## BeerAdvocateSpider
 
