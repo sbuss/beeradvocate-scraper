@@ -5,7 +5,27 @@
 
 from scrapy.item import Item, Field
 
-class BeeradvocateItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
+from beeradvocate.settings import BASE_URL
+
+
+class BeerAdvocateItem(Item):
+    style = Field()
+    style_id = Field()
+    name = Field()
+    beer_id = Field()
+    brewery = Field()
+    brewery_id = Field()
+    abv = Field()
+    rAvg = Field()
+    pDev = Field()
+    num_reviews = Field()
+    timestamp = Field()
+
+    def get_url(self):
+        return self.get_brewery_url() + "/%s" % self.beer_id
+
+    def get_brewery_url(self):
+        return BASE_URL + "/beer/profile/%s" % self.brewery_id
+
+    def get_style_url(self):
+        return BASE_URL + "/beer/style/%s" % self.style_id

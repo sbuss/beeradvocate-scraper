@@ -13,3 +13,5 @@ NEWSPIDER_MODULE = 'beeradvocate.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'beeradvocate (+http://www.yourdomain.com)'
+
+BASE_URL = 'http://beeradvocate.com'
