@@ -10,6 +10,7 @@ BOT_NAME = 'beeradvocate'
 
 SPIDER_MODULES = ['beeradvocate.spiders']
 NEWSPIDER_MODULE = 'beeradvocate.spiders'
+LOG_FILE = 'beeradvocate.log'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'beeradvocate (+http://www.yourdomain.com)'
