@@ -27,8 +27,8 @@ being used.
 
 This includes two spiders:
 
-    1. BeerAdvocateBrewerySpider
-    2. BeerAdvocateSpider
+1. BeerAdvocateBrewerySpider
+2. BeerAdvocateSpider
 
 ## BeerAdvocateBrewerySpider
 
