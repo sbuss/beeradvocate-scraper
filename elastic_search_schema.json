@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "beer": {
+      "_id" : {"path" : "beer_id"},
+      "properties": {
+        "brewery_id": {"type": "integer", "index": "not_analyzed"},
+        "style": {"type": "string", "store": "yes"},
+        "name": {"type": "string", "store": "yes"},
+        "timestamp": {"type": "date", "index": "not_analyzed"},
+        "num_reviews": {"type": "integer", "index": "not_analyzed"},
+        "abv": {"type": "float", "store": "yes"},
+        "style_id": {"type": "integer", "index": "not_analyzed"},
+        "pDev": {"type": "float", "store": "yes"},
+        "rAvg": { "type": "float", "store": "yes"},
+        "brewery": {"type": "string", "store": "yes"},
+        "beer_id": {"type": "integer"}
+      }
+    }
+  }
+}
