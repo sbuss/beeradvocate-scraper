@@ -15,7 +15,7 @@ curl -XPUT localhost:9200/beeradvocate -d @elastic_search_schema.json
 ```sh
 # Edit beers.json to have properly formatted timestamps (they're missing the 'T')
 
-while read $beer; do
+while read beer; do
   curl -XPOST localhost:9200/beeradvocate/beer -d "$beer"
 done < beers.json
 ```
