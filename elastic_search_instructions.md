@@ -17,13 +17,16 @@ curl -XDELETE localhost:9200/beeradvocate
 curl -XPUT localhost:9200/beeradvocate -d @elastic_search_schema.json
 ```
 
+# Reformat the beers
+```sh
+python prepare_beers.py beers.json > prepared_beers.json
+```
+
 # Put the beer in 
 ```sh
-# Edit beers.json to have properly formatted timestamps (they're missing the 'T')
-
 while read beer; do
   curl -XPOST localhost:9200/beeradvocate/beer -d "$beer"
-done < beers.json
+done < prepared_beers.json
 ```
 
 Known issue: unicode is not handled correctly
