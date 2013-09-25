@@ -5,6 +5,12 @@ cd elasticsearch
 bin/elasticsearch -f
 ```
 
+# Delete old index if necessary:
+
+```sh
+curl -XDELETE localhost:9200/beeradvocate
+```
+
 # Create an index
 
 ```sh
